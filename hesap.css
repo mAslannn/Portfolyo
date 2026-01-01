@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+.hesap-makinesi {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Ekran (Sonuç Göstergesi) */
+#ekran {
+    width: 260px;
+    height: 60px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 10px;
+    font-size: 32px;
+    border-radius: 5px;
+    border: none;
+    color: #333;
+}
+
+/* Tuşların Düzeni (CSS Grid) */
+.tuslar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 sütunlu yapı */
+    gap: 10px;
+    /* Tuşlar arası boşluk */
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+/* Renkli Tuşlar */
+.operator {
+    background-color: orange;
+}
+
+.operator:hover {
+    background-color: darkorange;
+}
+
+.temizle {
+    background-color: red;
+}
+
+.esittir {
+    background-color: green;
+    grid-column: span 2;
+    /* 2 birim yer kapla */
+}
