@@ -25,6 +25,16 @@ async function havaDurumuGetir() {
         // Eğer şehir bulunamazsa (404 hatası)
         if (!cevap.ok) {
             alert("Şehir bulunamadı!");
+
+            document.getElementById("sehirAdi").innerText = "--";
+            document.getElementById("sicaklik").innerText = "--";
+            document.getElementById("aciklama").innerText = "";
+
+            document.getElementById("havaIkonu").innerText = "";
+
+
+
+
             return;
         }
 
