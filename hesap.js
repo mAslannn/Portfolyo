@@ -11,6 +11,11 @@ function temizle() {
 
     let kutu = document.getElementById("ekran");
 
+    kutu.style.backgroundColor = "red";
+    setTimeout(function(){
+        kutu.style.backgroundColor = "white"
+    }, 500);
+
     kutu.value = "";
 
 }
