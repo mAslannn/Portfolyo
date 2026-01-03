@@ -19,7 +19,7 @@ async function havaDurumuGetir() {
 
     try {
         // 3. İNTERNETE GİT VE VERİYİ GETİR (Fetch)
-        // await: "Cevap gelene kadar bekle" demektir.
+        // await: "Cevap gelene kadar bekle" 
         const cevap = await fetch(url);
 
         // Eğer şehir bulunamazsa (404 hatası)

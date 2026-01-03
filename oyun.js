@@ -1,4 +1,3 @@
-// --- JAVASCRIPT ---
 
 // Değişkenlerimizi tanımlayalım (Skorları hafızada tutmak için)
 let oyuncuPuani = 0;
@@ -6,7 +5,6 @@ let bilgisayarPuani = 0;
 
 function oyna(oyuncuSecimi) {
     // GÖREV 1: Bilgisayara rastgele bir seçim yaptır (Taş, Kağıt veya Makas)
-    // İpucu: Math.random() kullanacağız.
     let secenekler = ["tas", "kagit", "makas"];
 
     // 2. Rastgele bir sayı üret (0, 1 veya 2)
@@ -54,5 +52,4 @@ function oyna(oyuncuSecimi) {
 
 
 
-    // GÖREV 3: Skorları ve Ekranı güncelle
 }
