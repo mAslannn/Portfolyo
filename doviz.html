@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/doviz.css">
+    <link rel="icon" href="img/bank.png" type="image/png">
+    <title>Döviz Çevirici</title>
+</head>
+
+<body>
+    <div class="alan">
+        <h1>Döviz Çevirici</h1>
+        <input type="number" id="miktar" placeholder="Miktar giriniz">
+
+        <div class="secim-kutusu">
+        <select class="doviz-sec" id="birinciDoviz">
+
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="TRY">TRY</option>
+
+        </select>
+        <span style="font-size: 20px;">⬇️</span> <select class="doviz-sec" id="ikinciDoviz">
+
+            <option value="TRY" selected>TRY</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+
+        </select>
+        </div>
+
+        <div class="result" id="sonuc">0.00</div>
+
+        <button id="cevirBtn">Çevir</button>
+
+    
+
+        <script src="js/doviz.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
