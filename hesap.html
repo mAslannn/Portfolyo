@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hesap.css">
+    <link rel="icon" href="img/calculator-solid-full.svg" type="image/svg+xml">
+    <title>Hesap Makinesi</title>
+</head>
+<body>
+
+            <div class="hesap-makinesi">
+        <input type="text" id="ekran" readonly>
+
+        <div class="tuslar">
+            <button class="temizle" onclick="temizle()">C</button>
+            <button onclick="ekranaYaz('/')">/</button>
+            <button onclick="ekranaYaz('*')">*</button>
+            <button class="temizle" onclick="sil()">Sil</button>
+
+            <button onclick="ekranaYaz('7')">7</button>
+            <button onclick="ekranaYaz('8')">8</button>
+            <button onclick="ekranaYaz('9')">9</button>
+            <button class="operator" onclick="ekranaYaz('-')">-</button>
+
+            <button onclick="ekranaYaz('4')">4</button>
+            <button onclick="ekranaYaz('5')">5</button>
+            <button onclick="ekranaYaz('6')">6</button>
+            <button class="operator" onclick="ekranaYaz('+')">+</button>
+
+            <button onclick="ekranaYaz('1')">1</button>
+            <button onclick="ekranaYaz('2')">2</button>
+            <button onclick="ekranaYaz('3')">3</button>
+            <button class="esittir" onclick="hesapla()">=</button>
+            
+            <button onclick="ekranaYaz('0')">0</button>
+            <button onclick="ekranaYaz('.')">.</button>
+        </div>
+    </div>
+
+
+
+    <script src="js/hesap.js"></script>
+</body>
+</html>

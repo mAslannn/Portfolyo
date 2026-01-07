@@ -1,0 +1,179 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1a1a1a;
+    /* Koyu Tema */
+    color: white;
+    line-height: 1.6;
+}
+
+/* MENÜ (NAVBAR) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* Sağa sola yasla */
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #252525;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    /* Sayfa kayınca üstte kalsın */
+    top: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+}
+
+.menu-linkleri a {
+    color: white;
+    text-decoration: none;
+    /* Alt çizgiyi kaldır */
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.menu-linkleri a:hover {
+    color: orange;
+}
+
+.menu-ikon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* GİRİŞ BÖLÜMÜ (HERO SECTION) */
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    color: #bbb;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* PROJELERİM BÖLÜMÜ */
+.projeler {
+    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Ortala */
+}
+
+h2 {
+    border-bottom: 2px solid orange;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.proje-kutulari {
+    display: flex;
+    /* Kutuları yan yana diz */
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    /* Sığmazsa alt satıra geç */
+}
+
+.kart {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    /* Eşit genişlik */
+    min-width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.kart:hover {
+    transform: translateY(-10px);
+    background-color: #444;
+}
+
+.emoji {
+    font-size: 50px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Link Butonu */
+.btn {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: darkorange;
+}
+
+/* İLETİŞİM */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #252525;
+    margin-top: 50px;
+    color: #777;
+}
+
+@media(max-width: 768px) {
+    .proje-kutulari {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kart {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .menu-linkleri {
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        /* linkleri alt alta diz */
+        align-items: center;
+        gap: 15px;
+        /* linkler birbirine yapışmasın */
+        margin-top: 15px;
+        /* logo ile ara açılsın */
+        width: 100%;
+        /* genişliği tam kapla */
+    }
+
+    .menu-ikon {
+        display: block;
+    }
+
+    .menu-linkleri.aktif{
+        display: flex;
+    }
+}

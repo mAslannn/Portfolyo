@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/oyun.css">
+    <link rel="icon" href="img/hand-scissors-regular-full.svg" type="image/svg+xml">
+    <title>Taş Kağıt Makas</title>
+</head>
+
+<body>
+
+    <h1>Taş - Kağıt - Makas</h1>
+
+    <div class="skor-tablosu">
+        <div>
+            <span class="oyuncu-badge">SEN</span>
+            <span id="oyuncuSkor">0</span>
+        </div>
+        <div>:</div>
+        <div>
+            <span class="oyuncu-badge">BİLGİSAYAR</span>
+            <span id="bilgisayarSkor">0</span>
+        </div>
+    </div>
+
+    <div class="arena">
+        <div class="kart">
+            <div class="emoji-buyuk" id="seninSecimin">❔</div>
+            <p>Sen</p>
+        </div>
+
+        <div id="sonucYazisi">Hamle Yap!</div>
+
+        <div class="kart">
+            <div class="emoji-buyuk" id="bilgisayarSecimi">❔</div>
+            <p>Bilgisayar</p>
+        </div>
+    </div>
+
+    <div class="butonlar">
+        <button onclick="oyna('tas')">🗿 Taş</button>
+        <button onclick="oyna('kagit')">📄 Kağıt</button>
+        <button onclick="oyna('makas')">✂️ Makas</button>
+    </div>
+
+
+
+
+
+    <script src="js/oyun.js"></script>
+</body>
+
+</html>
