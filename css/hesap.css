@@ -67,6 +67,9 @@ button:hover {
 
 .esittir {
     background-color: green;
+}
+
+.span-two {
     grid-column: span 2;
-    /* 2 birim yer kapla */
+    width: 100%; /* Tam otursun */
 }

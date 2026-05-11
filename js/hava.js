@@ -1,4 +1,4 @@
-const apiKey = "34e0276b999df67ab4f1d749a0867a0f";
+const apiKey = "c5aa64b7d685e871131afc657a389cba";
 
 // Bu fonksiyon "Ara" butonuna basınca çalışacak
 async function havaDurumuGetir() {

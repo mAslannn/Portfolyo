@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    background-color: #34495e;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.panel {
+    width: 250px;
+}
+
+.input-group {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#ekleBtn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#ekleBtn:hover {
+    background-color: #27ae60;
+}
+
+#liste {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#liste li {
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sahne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.gosterge {
+    position: absolute;
+    top: -10px;
+    z-index: 10;
+    font-size: 40px;
+    color: #e74c3c;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cark {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background: conic-gradient(red 0deg 120deg,
+            blue 120deg 240deg,
+            green 240deg 360deg);
+    transition: transform 4s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+#cevirBtn {
+    margin-top: 20px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+#cevirBtn:hover {
+    background-color: #d35400;
+}
+
+.dilim-yazi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 20px;
+    transform-origin: 0% 50%;
+    text-align: right;
+    padding-right: 30px;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 16px;
+    pointer-events: none;
+}
